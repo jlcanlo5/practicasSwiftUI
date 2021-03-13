@@ -24,11 +24,18 @@ struct ContentView: View {
                 .padding(30)
                 .scaledToFill()
                 .scaledToFit()
-                .background(Color.blue)
+                .background(Color.gray)
                 .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                .overlay(Circle().stroke(Color.blue)).shadow(color: Color.gray, radius:5)
+            Spacer()
+            Image(systemName:
+                    "moon.circle.fill").resizable()
+                .padding(20).scaledToFit()
+                .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
             Text("Todos los derechos reservados 2021")
                 .font(.caption)
                 .padding()
+                
         }
     }
 }
